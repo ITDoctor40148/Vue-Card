@@ -28,10 +28,9 @@
         </div>
       </div>
       <p class="mb-0 mt-3 font-13">
-        This place is all you need for the short or long trip to Tbilisi.
-        Perfect location! Sparkling clean and mordern.
+        {{ `${results.email} and ${results.phone}` }}
       </p>
-      <p class="mb-0 mt-3">from Facebook</p>
+      <p class="mb-0 mt-3">{{`from ${results.dob.date} and ${results.dob.age}`}}</p>
     </div>
   </div>
 </template>
